@@ -20,7 +20,8 @@ vue 2.0 踩坑<br>
   7.vue 2.0 填坑<br>
     http://blog.csdn.net/sinat_17775997/article/details/52788908<br>
   8.myself config<br>
-    package.json:<br>
+  
+    package.json:
     "dependencies": {
         "babel-runtime": "^6.0.0",
         "jquery": "^2.1.1",
@@ -28,26 +29,27 @@ vue 2.0 踩坑<br>
         "vue": "^1.0.21",
         "vue-router": "^0.7.10",
         "vuex": "^0.8.2"
-    },<br><br>
-    main.js:<br>
-    import Vue from 'vue';//加载vue.js<br>
-    import VuexStore from './vuex/store' ;//vuex状态管理，组件之间的通信<br>
-    import VueRouter from 'vue-router' ;//加载vue-router.js路由<br>
-    import RouterConfig from './router' ;//加载vue-router的定义文件<br>
-    // import AppConfig from './App';<br>
-    <br>
-    Vue.use(VueRouter);//使用路由插件<br>
-    //路由器需要创建一个根实例<br>
+    },
+    
+    main.js:
+    import Vue from 'vue';//加载vue.js
+    import VuexStore from './vuex/store' ;//vuex状态管理，组件之间的通信
+    import VueRouter from 'vue-router' ;//加载vue-router.js路由
+    import RouterConfig from './router' ;//加载vue-router的定义文件
+    // import AppConfig from './App';
+
+    Vue.use(VueRouter);//使用路由插件
+    //路由器需要创建一个根实例
     const App = Vue.extend({
         data:function(){
             return {
                 siteTitle:'',
                 apiUrl:''
             }
-        },<br>
+        },
         store: VuexStore
-    });<br>
-    //创建一个路由器实例<br>
+    });
+    //创建一个路由器实例
     const router = new VueRouter({
         hashbang:false,//去除#！开头
         transitionOnload:false,//初次加载的时候是否对<router-view>处理场景切换效果
@@ -56,32 +58,33 @@ vue 2.0 踩坑<br>
         // ,root:'/dist'//路由生效的基础路径
     });
     
-    //定义路由规则<br>
-    router.map(RouterConfig);<br>
-    //路由重定向<br>
+    //定义路由规则
+    router.map(RouterConfig);
+    //路由重定向
     router.redirect({
       '*': '/error'//404页面
-    });<br>
+    });
     
-    //路由会创建一个实例，挂载到相应的选择符匹配元素上<br>
-    router.start(App,'html');<br>
+    //路由会创建一个实例，挂载到相应的选择符匹配元素上
+    router.start(App,'html');
+    
   9.webpack 配置<br>
     http://www.cnblogs.com/bergus/p/4820435.html<br>
     http://yijiebuyi.com/blog/46fb97b11fb8f4055e0b04d1cecb1f69.html<br>
     我的配置：
-    var path = require('path')<br>
-    var config = require('../config')<br>
-    var utils = require('./utils')<br>
-    var webpack = require('webpack')<br>
-    var projectRoot = path.resolve(__dirname, '../')<br>
-    var autoprefixer =require('autoprefixer')<br>
+    var path = require('path')
+    var config = require('../config')
+    var utils = require('./utils')
+    var webpack = require('webpack')
+    var projectRoot = path.resolve(__dirname, '../')
+    var autoprefixer =require('autoprefixer')
 
-    var env = process.env.NODE_ENV<br>
-    // check env & config/index.js to decide weither to enable CSS Sourcemaps for the<br>
-    // various preprocessor loaders added to vue-loader at the end of this file<br>
-    var cssSourceMapDev = (env === 'development' && config.dev.cssSourceMap)<br>
-    var cssSourceMapProd = (env === 'production' && config.build.productionSourceMap)<br>
-    var useCssSourceMap = cssSourceMapDev || cssSourceMapProd<br>
+    var env = process.env.NODE_ENV
+    // check env & config/index.js to decide weither to enable CSS Sourcemaps for the
+    // various preprocessor loaders added to vue-loader at the end of this file
+    var cssSourceMapDev = (env === 'development' && config.dev.cssSourceMap)
+    var cssSourceMapProd = (env === 'production' && config.build.productionSourceMap)
+    var useCssSourceMap = cssSourceMapDev || cssSourceMapProd
     <br><br>
     module.exports = {
       entry: {
