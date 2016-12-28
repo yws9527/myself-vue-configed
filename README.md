@@ -72,13 +72,13 @@ vue 2.0 踩坑<br>
     http://www.cnblogs.com/bergus/p/4820435.html<br>
     http://yijiebuyi.com/blog/46fb97b11fb8f4055e0b04d1cecb1f69.html<br>
     我的配置：
+    
     var path = require('path')
     var config = require('../config')
     var utils = require('./utils')
     var webpack = require('webpack')
     var projectRoot = path.resolve(__dirname, '../')
     var autoprefixer =require('autoprefixer')
-
     var env = process.env.NODE_ENV
     // check env & config/index.js to decide weither to enable CSS Sourcemaps for the
     // various preprocessor loaders added to vue-loader at the end of this file
