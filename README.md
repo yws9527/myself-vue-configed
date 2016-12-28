@@ -169,4 +169,5 @@ vue 2.0 踩坑<br>
       }
     }
 
-    
+    10.webpack构建vue项目（配置篇）
+      http://www.cnblogs.com/brandonhulala/p/6057378.html
