@@ -474,13 +474,14 @@ vue 2.0 踩坑<br>
   
   12.webpack.base.config 配置<br>
   
-  
-    var path = require('path')
-    var webpack = require('webpack')
-    var config = require('../config')
-    var utils = require('./utils')
-    var projectRoot = path.resolve(__dirname, '../')
-    var autoprefixer = require('autoprefixer')
+  <br><br><br>
+    var path = require('path')<br>
+    var webpack = require('webpack')<br>
+    var config = require('../config')<br>
+    var utils = require('./utils')<br>
+    var projectRoot = path.resolve(__dirname, '../')<br>
+    var autoprefixer = require('autoprefixer')<br><br>
+    
     module.exports = {
       entry: {
         app: './src/main.js'
