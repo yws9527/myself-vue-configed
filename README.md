@@ -472,9 +472,8 @@ vue 2.0 踩坑<br>
       </html>
   
   
-  12.webpack.base.config 配置<br>
-  
-  <br><br><br>
+  12.webpack.base.config 配置
+  <br><br>
     var path = require('path')<br>
     var webpack = require('webpack')<br>
     var config = require('../config')<br>
