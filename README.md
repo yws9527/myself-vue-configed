@@ -472,7 +472,7 @@ vue 2.0 踩坑<br>
       </html>
   
   
-  12.webpack.base.config 配置
+  12.webpack.base.config 配置<br>
   <br>
     var path = require('path')<br>
     var webpack = require('webpack')<br>
@@ -480,6 +480,7 @@ vue 2.0 踩坑<br>
     var utils = require('./utils')<br>
     var projectRoot = path.resolve(__dirname, '../')<br>
     var autoprefixer = require('autoprefixer')<br>
+    
     module.exports = {
       entry: {
         app: './src/main.js'
@@ -562,6 +563,6 @@ vue 2.0 踩坑<br>
     }
     
     
- 14.jsonp跨域的两种实现<br>
+ 13.jsonp跨域的两种实现<br>
     http://m.toutiao.com/i6370891501244776961/?tt_from=weixin_moments&utm_campaign=client_share&from=timeline&app=news_article&utm_source=weixin_moments&iid=7040133467&utm_medium=toutiao_android&wxshare_count=1
        
