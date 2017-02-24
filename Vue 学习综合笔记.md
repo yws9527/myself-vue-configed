@@ -15,7 +15,9 @@
           this.http.post(uri,{[options]})————post方式 
          
           this.http({
-               method:"GET/POST" —— GET/POST请求			
+	  
+               method:"GET/POST" —— GET/POST请求	
+	       
           })
          
         全局请求：
@@ -25,7 +27,9 @@
           Vue.http.post(uri,{[options]})————post方式
          
           Vue.http({
-               method:"GET/POST" —— GET/POST请求			
+	  
+               method:"GET/POST" —— GET/POST请求	
+	       
           })
          
         ss特别注意：：：
