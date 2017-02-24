@@ -10,26 +10,24 @@
     
         局部请求：
       
-          this.http.get(uri,{[options]})————get方式 
+          this.http.get(uri,{[options]})  ——— GET 方式 
          
-          this.http.post(uri,{[options]})————post方式 
+          this.http.post(uri,{[options]}) ——— POST 方式 
          
           this.http({
-	  
-               method:"GET/POST" —— GET/POST请求	
-	       
+	       //请求体属性设置
+               method:"GET/POST" —— GET / POST请求	
           })
          
         全局请求：
     
-          Vue.http.get(uri,{[options]})————get方式 
+          Vue.http.get(uri,{[options]})  ——— GET 方式 
          
-          Vue.http.post(uri,{[options]})————post方式
+          Vue.http.post(uri,{[options]}) ——— POST 方式
          
           Vue.http({
-	  
-               method:"GET/POST" —— GET/POST请求	
-	       
+	       //请求体属性设置
+               method:"GET/POST" —— GET / POST请求	
           })
          
         ss特别注意：：：
