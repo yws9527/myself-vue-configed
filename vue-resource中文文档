@@ -1,7 +1,6 @@
                                           vue-resource插件使用
 
-http://www.cnblogs.com/axl234/p/5899137.html
-
+http://www.cnblogs.com/axl234/p/5899137.html<br/>
 本文的主要内容如下：
 
 介绍vue-resource的特点
@@ -493,4 +492,3 @@ vue-resource是一个非常轻量的用于处理HTTP请求的插件，它提供�
 这两种方式本质上没有什么区别，阅读vue-resource的源码，你可以发现第2种方式是基于第1种方式实现的。
 
 inteceptor可以在请求前和请求后附加一些行为，这意味着除了请求处理的过程，请求的其他环节都可以由我们来控制。
-
