@@ -14,8 +14,8 @@
          
           this.http.post(uri,{[options]}) ——— POST 方式 
          
-          this.http({      
-               // ..set requert content here
+          this.http({
+	       // ..set requert content here
                method : "GET/POST" —— GET / POST请求	
           })
          
@@ -25,7 +25,7 @@
          
           Vue.http.post(uri,{[options]}) ——— POST 方式
          
-          Vue.http({   
+          Vue.http({
 	       // ..set requert content here  
                method : "GET/POST" —— GET / POST请求	
           })
