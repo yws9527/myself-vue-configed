@@ -15,7 +15,8 @@
           this.http.post(uri,{[options]}) ——— POST 方式 
          
           this.http({
-               //请求体属性设置  
+               //...          
+               // 请求体属性设置  
                method:"GET/POST" —— GET / POST请求	
           })
          
@@ -26,6 +27,7 @@
           Vue.http.post(uri,{[options]}) ——— POST 方式
          
           Vue.http({
+               //...     
                //请求体属性设置  
                method:"GET/POST" —— GET / POST请求	
           })
