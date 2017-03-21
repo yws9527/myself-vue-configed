@@ -57,10 +57,10 @@
                 if (isWin2003) return "WinVista"; 
                 var isWin2003 = sUserAgent.indexOf("Windows NT 6.1") > -1 || sUserAgent.indexOf("Windows 7") > -1; 
                 if (isWin2003) return "Win7"; 
-              } 
+              } ;
               return "None"; 
-            }
-	    
+            };
+    
 	    
 3.//获取浏览器名字+版本字符串
 
@@ -86,7 +86,7 @@
                 if(agent.indexOf("safari") > 0 && agent.indexOf("chrome") < 0){
                     return agent.match(regStr_saf) ;
                 }
-            },
+            };
             /*function locationHref(e){
                  switch(e){
                      case 'Mac':
@@ -117,4 +117,4 @@
                          window.location.href='http://www.hao123.com/';
                          break;
                  }
-            },*/
+            };*/
