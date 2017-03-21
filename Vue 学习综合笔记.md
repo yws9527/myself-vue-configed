@@ -36,7 +36,8 @@
           
            POST 请求方式的参数放在 body 对象里
 2.//获取客户端操作系统类型 
-          getectOSInfo:function () { 
+
+          function getectOSInfo () { 
               var sUserAgent = navigator.userAgent; 
               var isWin = (navigator.platform == "Win32") || (navigator.platform == "Windows"); 
               var isMac = (navigator.platform == "Mac68K") || (navigator.platform == "MacPPC") || (navigator.platform == "Macintosh") || (navigator.platform == "MacIntel"); 
@@ -59,8 +60,10 @@
               } 
               return "None"; 
             }；
+	    
 3.//获取浏览器名字+版本字符串
-            getBrowserInfo:function (){
+
+            function getBrowserInfo (){
                 var agent = navigator.userAgent.toLowerCase() ;
                 var regStr_ie = /msie [\d.]+;/gi ;
                 var regStr_ff = /firefox\/[\d.]+/gi
