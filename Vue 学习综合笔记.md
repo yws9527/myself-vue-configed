@@ -59,7 +59,8 @@
                 if (isWin2003) return "Win7"; 
               } 
               return "None"; 
-            }；
+            }
+	    
 	    
 3.//获取浏览器名字+版本字符串
 
