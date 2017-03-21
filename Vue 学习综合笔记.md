@@ -58,10 +58,9 @@
                 var isWin2003 = sUserAgent.indexOf("Windows NT 6.1") > -1 || sUserAgent.indexOf("Windows 7") > -1; 
                 if (isWin2003) return "Win7"; 
               } ;
-              return "None"; 
+              return "None";
             };
-    
-	    
+<br/>  <br/> <br/> <br/> 
 3.//获取浏览器名字+版本字符串
 
             function getBrowserInfo (){
