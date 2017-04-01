@@ -119,3 +119,24 @@
                     break;
            }
        };
+
+4.获取用户切屏次数
+/*依赖 jquery*/
+	
+	<script type="text/javascript">
+	    	$(function(){
+	    		var time = 0;	//切屏计数初始值
+	    		var hiddenProperty = 'hidden' in document ? 'hidden' : 'webkitHidden' in document ? 'webkitHidden':null;
+	        	var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange' );
+		        var onVisibilityChange = function(){
+		            if (document[hiddenProperty]) {
+		            	time++;
+		                console.log( '页面非激活'+ time +'次');
+		            }else{
+		                console.log( '页面激活'+ time +'次');
+		            }
+		        };
+		        $(document).on( visibilityChangeEvent, onVisibilityChange );
+	    	});
+	    </script>
+	    
