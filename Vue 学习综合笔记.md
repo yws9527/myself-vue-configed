@@ -140,3 +140,5 @@
 	    	});
 	    </script>
 	    
+5.JS 生成26个大小写字母
+	http://www.cnblogs.com/imwtr/p/4617511.html
